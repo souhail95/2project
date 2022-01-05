@@ -1,0 +1,13 @@
+{
+
+"events": {
+        
+           
+           
+           "crash": "nodemon index"
+
+
+},
+     "delay":  "0"
+
+}

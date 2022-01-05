@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link id="favicon" rel="icon" href="img/1111.jpg" type="image/x-icon" style="border-radius: 6px 6px 6px 6px;">
+  <meta charset="UTF-8">
+  <title>Closed</title>
+<link rel="stylesheet" href="css/labphase.css" />
+</head>
+
+<body style="background-color: rgb(9, 9, 90)"  >
+<div style="color: white"  style="text-align:center"  style="margin-bottom:5%">
+<h1  id="insert" style="text-align:center"></h1>
+<h1 style="text-align:center">Our website is open during the week from 9:00 a.m to 17:00 p.m except for the week-end.</h1>
+<h1 style="text-align:center" style="margin-bottom:5%" >Please, come back later.</h1>
+</div>
+<img src="img/1111.jpg" class="box1000"  />
+</body>
+<script>
+const date = new Date();
+const d = date.toString();
+console.log(d);
+let x = d.split(' ');
+const day = x[0];
+const hour = date.getHours();
+const day1 = date.getDay();
+console.log(day);
+console.log(day1);
+console.log(hour);
+document.getElementById("insert").innerHTML = 'Last access attempt made on ' + d;
+</script>
+
+</html>

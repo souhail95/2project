@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="js/labphase.js" async=""></script>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <style>
+    body {
+      background-image: url(https://images.unsplash.com/photo-1535940360221-641a69c43bac?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWZyaWNhbiUyMHNhdmFubmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>
+  <link id="favicon" rel="icon" href="img/icon1.jpg" type="image/x-icon" style="border-radius: 50% ;">
+ <link rel="stylesheet" href="css/labphase.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="box12">
+      <div><a href="/"><img alt="Home Page" src="img/icon1.jpg" style="border-radius:50%; height: 80px; width: 80px;"></a>
+        <div class="box130"><a href="/" style="color:orange;text-decoration: none;">Home Page</a></div>
+      </div>
+      <div class="box120"><a class="box34" href="/OurServices" style="  margin-right: 30px; margin-left: 30px;text-decoration: none;">Our Services</a><a class="box34" href="/ContactUs" style="  margin-right: 30px; margin-left: 30px; text-decoration: none;">Contact Us</a></div>
+    </nav>
+  </header>
+  <main class="box80" style="height: 892px;">
+    <div class="results2"></div><br>
+    <div class="box40">
+      <div id="results"></div>
+    </div>
+    <div class="results1"></div>
+    <div class="box51">
+      <button class="box50" type="button" onclick="suppress()" style="text-decoration:none;"><a href="/OurServices" style="text-decoration:none;color: white;">Confirm,flush data and back to main page</a></button>
+    </div>
+    <script>
+      const resultslist = document.getElementById('results')
+      const resultslist1 = document.getElementsByClassName('results1')
+      const resultslist2 = document.getElementsByClassName('results2')
+      document.getElementsByClassName("results1").innerHtml = localStorage.getItem("textvalue");
+      document.getElementsByClassName("results1").innerHtml = localStorage.getItem("textvalue1");
+      document.getElementsByClassName("results2").innerHtml = localStorage.getItem("textvalue2");
+      resultslist.append(document.getElementsByClassName("results2").innerHtml);
+      resultslist.append(document.createElement('br'))
+      new URLSearchParams(window.location.search).forEach((value, name) => {
+        resultslist.append(`${name}: ${value}`)
+        resultslist.append(document.createElement('br'))
+      })
+      resultslist.append(document.getElementsByClassName("results1").innerHtml);
+
+      function suppress() {
+        localStorage.removeItem("textvalue1")
+        localStorage.removeItem("textvalue2")
+        var blank1 = `You haven t booked your ticket yet`
+        localStorage.setItem("textvalue1", blank1)
+      }
+    </script>
+  </main>
+  <footer>
+    <div   style="background-color:white"  style="display:inline-flex" class="box1500" style="text-align:center"><h1 style="padding-bottom:1%" style="display:inline-flex"  style="text-align:center" style="color:black" class="box1500" style="background-color:white" style="margin-bottom:10%">Change or cancel a booking made on our website or through our app, please call us at 1-866-368-0396 (Monday to Friday 9:00am to 5:00pm EST) or email or e-commerce team at web.bookings@flightcentre.ca.</h1></div>
+    <h1 class="box6"> Get connected with </h1>
+    <nav>
+      <div class="box10"><img src="img/gmail-logo.png" width="80" height="50"><img src="img/174857.png" width="100" height="50"><img src="img/fb_icon_325x325.png" width="50" height="50"></div>
+      <div class="box11">
+        <h1 class="box33"><a class="box33" href="https://mail.google.com/" style=" margin-left: 30px; text-decoration: none;">Mail</a></h1>
+        <h1 class="box33"><a class="box33" href="https://fr.linkedin.com/" style=" margin-left: 75px; text-decoration: none;">Linkedin</a></h1>
+        <h1 class="box33"><a class="box33" href="https://fr-fr.facebook.com/" style=" margin-left:30px; text-decoration: none;">Facebook</a></h1>
+      </div>
+    </nav>
+  </footer>
+</body>
+
+</html>

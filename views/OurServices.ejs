@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Our Services </title>
+  <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+  <script src="js/labphase.js" async=""></script>
+  <meta charset="UTF-8">
+  <link id="favicon" rel="icon" href="img/icon1.jpg" type="image/x-icon" style="border-radius: 6px 6px 6px 6px;">
+  <style>
+    body {
+      background-image: url(https://images.unsplash.com/photo-1535940360221-641a69c43bac?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWZyaWNhbiUyMHNhdmFubmF8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>
+<link rel="stylesheet" href="css/labphase.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="box12">
+      <div>
+        <div class="box100"><a href="/"><img alt="Home Page" src="img/icon1.jpg" style="border-radius:50%; height: 80px; width: 80px;"></a>
+          <div class="box13"><a href="/" style="color:orange;text-decoration: none;">Home Page</a></div>
+        </div>
+      </div>
+      <div class="box110">
+        <div class="box14"><a class="box34" href="/OurServices" style="margin-right: 30px; margin-left: 30px;text-decoration: none;">Our Services</a><a class="box34" href="/ContactUs" style=" margin-right: 30px; margin-left: 30px; text-decoration: none;">Contact Us </a></div>
+      </div>
+    </nav>
+  </header>
+  <main class="box15">
+    <section box="17">
+      <h1 style="color:white; margin-left: 100px; border-radius: 6px 6px 6px 6px;">Different destinations</h1>
+      <div class="carousel" style="border-radius: 6px 6px 6px 6px;">
+        <button class="button1" id="next" type="button">
+          < </button> <div class="shop-items">
+            <div class="shop-item"><span class="shop-item-title"> Rome , Italy </span><img class="shop-item-image" src="img/rome.png">
+              <div class="shop-item-details"><span class="shop-item-price"> $16732 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh1" onclick="toggle1()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Paris , France </span><img class="shop-item-image" src="img/paris.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $19900 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh2" onclick="toggle2()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> London , UK </span><img class="shop-item-image" src="img/london.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $29874 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh3" onclick="toggle3()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Rio de janeiro , Brazil </span><img class="shop-item-image" src="img/rio de janairo.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $29762 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh4" onclick="toggle4()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Las vegas , USA </span><img class="shop-item-image" src="img/las vegas.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $22804 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh5" onclick="toggle5()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Jakarta , Indonesia </span><img class="shop-item-image" src="img/jakarta.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $9212 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh6" onclick="toggle6()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Gizeh , Egypt </span><img class="shop-item-image" src="img/gizeh.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $17736 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh7" onclick="toggle7()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Kruger , South africa </span><img class="shop-item-image" src="img/kruger.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $23320 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh8" onclick="toggle8()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="shop-item"><span class="shop-item-title"> Masai , Kenya </span><img class="shop-item-image" src="img/masai.jpg">
+              <div class="shop-item-details"><span class="shop-item-price"> $10410 </span>
+                <button class="btn btn-primary shop-item-button" type="button"> CLICK </button>
+                <button class="btn1" id="btnh9" onclick="toggle9()"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+      </div>
+      <button class="button1" id="previous" type="button"> > </button>
+      </div>
+    </section>
+    <section class="box16">
+      <div class="box19">
+        <p>Dear customer,</p>
+        <p>*First you have to choose your destination by clicking on it.</p>
+        <p>*You cannot choose other than a single destination.</p>
+        <p>*Choose the number of tickets you want by incrementing or decrementing.</p>
+        <p>*If you are not satisfied,you can remove it.</p>
+        <p>*Book your tickets by clicking on "Book" and finally submit by clicking on "submit".</p>
+        <p>*If you havent book your destination,the result will be null.</p>
+        <p>*If you click "book" without choosing your destination,the result will be null.</p>
+        <p>*On the page result,confirm and flush to get rid of your ancient data.</p>
+        <p>Otherwise,your ancient data will remain saved.</p>
+      </div>
+      <div class="cart-total" id="box20"><strong class="cart-total-title" style="margin-left: 10px; margin-top: 30px; margin-bottom: 30px;">Total</strong><br><span class="cart-total-price" style="margin-left: 10px; margin-top: 30px; margin-bottom: 30px;">$0</span></div>
+      <form action="/ContactUs" method="GET">
+        <div id="box21">
+          <button class="btn btn-primary btn-purchase" type="button"> BOOK </button>
+        </div>
+      </form>
+    </section>
+    <section class="box18">
+      <form action="/ContactUs" method="GET" enctype="multipart/form-data">
+        <div>
+          <label class="box140" for="first-name">First name:</label>
+          <input class="box150" id="first-name" type="text" name="first-name" minlength="2" placeholder="Type your first name here" required=""><br>
+        </div>
+        <div>
+          <label class="box140" for="last-name">Last Name:</label>
+          <input class="box150" id="last-name" type="text" name="last-name" minlength="2" placeholder="Type your last name here" required=""><br>
+        </div>
+        <div>
+          <label class="box140" for="age">Age:</label>
+          <input class="box200" id="age" type="number" name="age" value="18" min="18" max="100" required=""><br>
+        </div>
+        <div>
+          <label class="box140" for="email">Email:</label>
+          <input class="box150" id="email" type="email" name="email" placeholder="Type your email here" required=""><br>
+        </div>
+        <div>
+          <label class="box140" for="password">Password:</label>
+          <input class="box150" id="password" type="password" name="password" minlength="6" maxlength="20" required=""><br>
+        </div>
+        <div class="box140">Gender:</div>
+        <div class="box160">
+          <label class="box140" for="male">Male</label>
+          <input class="box170" id="male" type="radio" name="gender" value="male" required="">
+        </div><br>
+        <div class="box160">
+          <label class="box140" for="female">Female</label>
+          <input class="box170" id="female" type="radio" name="gender" value="female" required="">
+        </div>
+        <div>
+          <label class="box140" id="continent" name="continent">Choose the continent you live in already:</label>
+          <select class="box180" id="menu">
+            <option value="" name=""></option>
+            <option class="box190" value="Africa" name="Africa">Africa</option>
+            <option class="box190" value="Europe" name="Europe">Europe</option>
+            <option class="box190" value="Asia" name="Asia">Asia</option>
+            <option class="box190" value="Oceania" name="Oceania">Oceania</option>
+            <option class="box190" value="America" name="America">America </option>
+            <option class="box190" value="Antarctica" name="Antarctica">Antarctica</option>
+          </select><br>
+        </div>
+        <div>
+          <label class="box140" for="country">Tap your origin country:</label>
+          <input class="box150" id="country" type="text" name="country" required="">
+        </div>
+        <div>
+          <label class="box140" for="file">Import your image:</label>
+          <input class="box150" id="file" type="file" name="file" style="color:white" required="">
+        </div>
+        <div>
+          <label class="box140" for="phone">Phone:</label>
+          <input class="box150" id="phone" type="tel" name="phone" pattern="[0-7]{8}" minlength="8" maxlength="8" required="">
+        </div>
+        <div>
+          <label class="box140" for="url">Your secret question URL:</label>
+          <input class="box150" id="url" type="url" name="url" required="">
+        </div><br>
+        <div style="margin-left: 70px;">
+          <button class="box50" type="submit">Submit</button>
+          <button class="box50" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    <script>
+      let choice = document.getElementsByClassName("shop-item-button")
+      for (let i = 0; i <= choice.length - 1; i++) {
+        choice[i].addEventListener('click', test1)
+      }
+      let choix = document.getElementsByClassName("btn-purchase")[0]
+      choix.addEventListener('click', test)
+
+      function test1(event) {
+        let choice2 = event.target
+        let choice1 = choice2.parentElement.parentElement
+        let choice3 = choice1.getElementsByClassName("shop-item-title")[0].innerText
+        choix.onclick = function() {
+          document.getElementsByClassName("box")[0].innerHTML = 'you have booked your ticket to ' + choice3
+          var firstname = document.getElementsByClassName("box")[0].innerHTML
+          localStorage.setItem("textvalue", firstname)
+        }
+      }
+
+      function test() {
+        document.getElementsByClassName("box")[0].innerHTML = 'you haven t booked your ticket yet '
+        var firstname = document.getElementsByClassName("box")[0].innerHTML
+        localStorage.setItem("textvalue", firstname)
+      }
+    </script>
+  </main>
+  <section class="box70" style="margin-bottom:10%">
+    <div class="box60">
+      <h2 class="section-header" style="color:white;"> Chosen destination </h2>
+    </div>
+    <div class="box60">
+      <div class="box1" style="color:white"><span> ITEM </span><span> PRICE </span><span> QUANTITY </span></div>
+    </div>
+    <div class="box60">
+      <div class="cart-items"></div>
+    </div>
+  </section>
+  <script>
+    var btnvar1 = document.getElementById('btnh1');
+
+    function toggle1() {
+      if (btnvar1.style.color == "red") {
+        btnvar1.style.color = "grey";
+      } else {
+        btnvar1.style.color = "red";
+      }
+    }
+    var btnvar2 = document.getElementById('btnh2');
+
+    function toggle2() {
+      if (btnvar2.style.color == "red") {
+        btnvar2.style.color = "grey";
+      } else {
+        btnvar2.style.color = "red";
+      }
+    }
+    var btnvar3 = document.getElementById('btnh3');
+
+    function toggle3() {
+      if (btnvar3.style.color == "red") {
+        btnvar3.style.color = "grey";
+      } else {
+        btnvar3.style.color = "red";
+      }
+    }
+    var btnvar4 = document.getElementById('btnh4');
+
+    function toggle4() {
+      if (btnvar4.style.color == "red") {
+        btnvar4.style.color = "grey";
+      } else {
+        btnvar4.style.color = "red";
+      }
+    }
+    var btnvar5 = document.getElementById('btnh5');
+
+    function toggle5() {
+      if (btnvar5.style.color == "red") {
+        btnvar5.style.color = "grey";
+      } else {
+        btnvar5.style.color = "red";
+      }
+    }
+    var btnvar6 = document.getElementById('btnh6');
+
+    function toggle6() {
+      if (btnvar6.style.color == "red") {
+        btnvar6.style.color = "grey";
+      } else {
+        btnvar6.style.color = "red";
+      }
+    }
+    var btnvar7 = document.getElementById('btnh7');
+
+    function toggle7() {
+      if (btnvar7.style.color == "red") {
+        btnvar7.style.color = "grey";
+      } else {
+        btnvar7.style.color = "red";
+      }
+    }
+    var btnvar8 = document.getElementById('btnh8');
+
+    function toggle8() {
+      if (btnvar8.style.color == "red") {
+        btnvar8.style.color = "grey";
+      } else {
+        btnvar8.style.color = "red";
+      }
+    }
+    var btnvar9 = document.getElementById('btnh9');
+
+    function toggle9() {
+      if (btnvar9.style.color == "red") {
+        btnvar9.style.color = "grey";
+      } else {
+        btnvar9.style.color = "red";
+      }
+    }
+  </script>
+</body>
+
+</html>
