@@ -1,7 +1,7 @@
 const express = require('express');
 var cron = require('node-cron');
 
-const port = 4000;
+
 const app = express();
 console.log(__dirname);
 app.set('views','./views');
@@ -19,7 +19,7 @@ app.use('/',homePage);
 
 app.use('/OurServices',ourServices);
 app.use('/ContactUs', contactUs);
-
+const port = process.env.PORT || 4000;
 app.listen(port, function(){
   
   console.log('The server is running,'+'Please open your browser at http://localhost:%s',port)
